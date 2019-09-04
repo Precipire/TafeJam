@@ -9,10 +9,11 @@ public class GenerateInput : MonoBehaviour
     public Transform previousObject, firstPiece, lastPiece;
     public GameObject empty;
     public float distance;
-    bool first = true;
+    public bool first = true;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        Debug.Log(previousObject);
         SpawnSequence();
     }
 
@@ -24,7 +25,6 @@ public class GenerateInput : MonoBehaviour
         
         
     }
-
     public void SpawnSequence()
     {
         sequence = new Image[Random.Range(4, 10)];
@@ -39,7 +39,7 @@ public class GenerateInput : MonoBehaviour
             }
             sequence[i] = Instantiate(empty, new Vector3(previousObject.position.x + distance, previousObject.position.y, previousObject.position.z), Quaternion.identity, this.transform).GetComponent<Image>();
             previousObject = sequence[i].transform;
-
+            Debug.Log(previousObject);
         }
         lastPiece = sequence[sequence.Length - 1].transform;
         foreach (Image piece in sequence)

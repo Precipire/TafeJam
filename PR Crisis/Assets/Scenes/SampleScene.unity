@@ -221,7 +221,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f7a1d6cf1162ca45b125814e4a5c54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: {fileID: 0}
+  holdTime: 1
+  input: {fileID: 401962853}
+  heldDone: {fileID: 21300000, guid: 1702aacb3df439c48a865a41bfb8fad8, type: 3}
+  pressedDone: {fileID: 21300000, guid: bb2cc957d735a8b49b9cd1361b238707, type: 3}
 --- !u!1 &401962851
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,8 +275,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sequence: []
   types:
-  - {fileID: 21300000, guid: 58a0a7e32fa8e494fb8749c1ff97402b, type: 3}
-  - {fileID: 21300000, guid: f8c282d806db4074d8176d3cadf63eb2, type: 3}
+  - {fileID: 21300000, guid: 894e913ffd9edbd4b88fb18a9a1332da, type: 3}
+  - {fileID: 21300000, guid: 614a2b2a76b2fa64bbe7f086621c1095, type: 3}
   previousObject: {fileID: 401962852}
   firstPiece: {fileID: 0}
   lastPiece: {fileID: 0}
